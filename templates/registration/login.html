@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%extends 'apps/home.html'%}
+{%block content%}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{%block title%}
+	<title>Login page</title>
+	{%endblock title%}
+</head>
+<center>
+<body>
+	<h1>Login :</h1>
+
+	<form method="POST">
+		{{form.as_p}}
+		{%csrf_token%}
+
+		<input type="submit" name="SUBMIT">
+		
+	</form>
+		
+
+</body>
+</center>
+{%endblock%}
+</html>
